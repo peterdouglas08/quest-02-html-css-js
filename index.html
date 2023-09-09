@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest 02 - HTML, CSS e JS</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <div class="conteudo">
+                <h1 class="titulo">FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h1>
+                <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em
+                    contato em menos de 24h.</p>
+            </div>
+            <section class="formulario">
+                <form class="cadastro" id="form" action="index.html" method="get" autocomplete="on">
+                    <label for="nome"></label>
+                    <input class="info" id="nome" type="text" placeholder="Nome completo *" required>
+                    <p class="usuario ativo">campo obrigatório</p>
+
+                    <label for="email"></label>
+                    <input class="info" id="email" type="text" placeholder="Email *" required>
+                    <p class="usuario ativo">campo obrigatório</p>
+
+                    <label for="telefone"></label>
+                    <input class="info" id="telefone" type="text" placeholder="Telefone *" required>
+                    <p class="usuario ativo">campo obrigatório</p>
+
+                    <textarea class="mensagem" name="mensagem" id="mensagem" cols="30" rows="10"
+                        placeholder="Mensagem *" required></textarea>
+                    <p class="usuario usuarioMsg ativo">campo obrigatório</p>
+                    
+                    <p class="obrigatorio">*Campos obrigatórios</p>
+                    
+                    <button type="submit" value="enviar" class="botao">Enviar</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="src/js/formulario.js"></script>
+</body>
+
+</html>

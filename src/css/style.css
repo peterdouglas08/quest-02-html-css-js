@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 402px;
+    background-image: url(/src/images/fundo-formulario.png);
+}
+
+.container .conteudo {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.container .conteudo .titulo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
+.container .conteudo .texto {
+    color: #fff;
+    font-size: 15px;
+    width: 300px;
+}
+
+.container .formulario .cadastro {
+    width: 340px;
+    height: 378px;
+    background-color: #fff;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+.container .formulario .cadastro input {
+    width: 298px;
+    height: 35px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.container .formulario .cadastro input::placeholder,
+.container .formulario .cadastro textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.container .formulario .cadastro textarea {
+    width: 298px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container .formulario .cadastro p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.container .formulario .cadastro button {
+    width: 298px;
+    height: 41px;
+    background-color: #3CCC87;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+    margin: 20px 0 20px;
+    cursor: pointer;
+}
+
+.container .formulario .cadastro .usuario {
+    display: none;
+    color: #F52E2E;
+    font-size: 8px;
+    position: absolute;
+    transform: translateY(-23px);
+}
+
+.container .formulario .cadastro .usuario .usuarioMsg {
+    display: none;
+    color: #F52E2E;
+    font-size: 8px;
+    position: absolute;
+    transform: translateY(-13px);
+}
+
+.bordaVerde {
+    border: 1px solid #3CCC87;
+}
+
+.bordaVermelha {
+    border: 1px solid #F52E2E;
+}
+
+.ativo{
+    display: block;
+}
