@@ -10,6 +10,8 @@ main{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-image: url(/src/images/fundo-formulario.png);
+    background-size: contain;
 }
 
 .container {
@@ -18,7 +20,6 @@ main{
     align-items: center;
     width: 800px;
     height: 402px;
-    background-image: url(/src/images/fundo-formulario.png);
 }
 
 .container .conteudo {
@@ -47,7 +48,7 @@ main{
     margin-right: 50px;
 }
 
-.container .formulario .cadastro input {
+.container .formulario .cadastro .dados {
     width: 298px;
     height: 35px;
     border: 1px solid #000;
@@ -57,14 +58,14 @@ main{
     padding: 10px;
 }
 
-.container .formulario .cadastro input::placeholder,
-.container .formulario .cadastro textarea::placeholder{
+.container .formulario .cadastro .dados::placeholder,
+.container .formulario .cadastro .mensagem::placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 400;
 }
 
-.container .formulario .cadastro textarea {
+.container .formulario .cadastro .mensagem {
     width: 298px;
     height: 100px;
     background-color: #fff;
@@ -73,12 +74,11 @@ main{
     padding: 10px;
 }
 
-.container .formulario .cadastro p {
+.container .formulario .cadastro .texto-fixo {
     font-size: 15px;
-    margin-top: 10px;
 }
 
-.container .formulario .cadastro button {
+.container .formulario .cadastro .botao {
     width: 298px;
     height: 41px;
     background-color: #3CCC87;
@@ -88,34 +88,32 @@ main{
     font-size: 15px;
     font-weight: 700;
     padding: 12px;
-    margin: 20px 0 20px;
+    margin: 15px 0 20px;
     cursor: pointer;
 }
 
-.container .formulario .cadastro .usuario {
+.container .formulario .cadastro .alerta {
     display: none;
+    position: absolute;
     color: #F52E2E;
     font-size: 8px;
-    position: absolute;
-    transform: translateY(-23px);
-}
-
-.container .formulario .cadastro .usuario .usuarioMsg {
-    display: none;
-    color: #F52E2E;
-    font-size: 8px;
-    position: absolute;
     transform: translateY(-13px);
 }
 
-.bordaVerde {
+.container .formulario .cadastro .alerta-mensagem {
+    color: #F52E2E;
+    font-size: 8px;
+    transform: translateY(-16px);
+}
+
+.container .formulario .cadastro .dados.borda-verde {
     border: 1px solid #3CCC87;
 }
 
-.bordaVermelha {
+.container .formulario .cadastro .dados.borda-vermelha {
     border: 1px solid #F52E2E;
 }
 
-.ativo{
+.container .formulario .cadastro .ativo{
     display: block;
 }

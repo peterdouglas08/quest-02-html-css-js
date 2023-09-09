@@ -1,21 +1,24 @@
-const form = document.querySelector("#form")
-const trocarBorda = document.querySelectorAll(".info, .mensagem");
-const btnEnviar = document.querySelector(".botao");
+const formulario = document.getElementById("form")
+const dadosUsuario = document.querySelectorAll(".dados")
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault()
+formulario.addEventListener("submit", function (event) {
+  event.preventDefault()
 
-    trocarBorda.forEach(info => {
-        if (info.value) {
-            info.classList.remove("bordaVermelha");
-            info.classList.add("bordaVerde");
-            info.style.display = "none";
-        } else {
-            info.classList.remove("bordaVerde");
-            info.classList.add("bordaVermelha");
-            info.style.display = "block"; 
-        }
-    });
-    
-    form.submit();
-});
+  let camposPreenchidos = 0
+
+  dadosUsuario.forEach(function (item) {
+    if (item.value.trim() === "") {
+      item.classList.add("borda-vermelha")
+      item.nextElementSibling.classList.add("ativo")
+    } else {
+      item.classList.remove("borda-vermelha")
+      item.classList.add("borda-verde")
+      item.nextElementSibling.classList.remove("ativo")
+      camposPreenchidos++
+    }
+  })
+
+  if (camposPreenchidos === dadosUsuario.length) {
+    formulario.submit()
+  }
+})

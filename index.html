@@ -20,22 +20,22 @@
             <section class="formulario">
                 <form class="cadastro" id="form" action="index.html" method="get" autocomplete="on">
                     <label for="nome"></label>
-                    <input class="info" id="nome" type="text" placeholder="Nome completo *" required>
-                    <p class="usuario ativo">campo obrigatório</p>
+                    <input class="dados" name="nome" id="nome" type="text" placeholder="Nome completo *">
+                    <p class="alerta">campo obrigatório</p>
 
                     <label for="email"></label>
-                    <input class="info" id="email" type="text" placeholder="Email *" required>
-                    <p class="usuario ativo">campo obrigatório</p>
+                    <input class="dados" name="email" id="email" type="text" placeholder="Email *">
+                    <p class="alerta">campo obrigatório</p>
 
                     <label for="telefone"></label>
-                    <input class="info" id="telefone" type="text" placeholder="Telefone *" required>
-                    <p class="usuario ativo">campo obrigatório</p>
+                    <input class="dados" name="telefone" id="telefone" type="text" placeholder="Telefone *">
+                    <p class="alerta">campo obrigatório</p>
 
-                    <textarea class="mensagem" name="mensagem" id="mensagem" cols="30" rows="10"
-                        placeholder="Mensagem *" required></textarea>
-                    <p class="usuario usuarioMsg ativo">campo obrigatório</p>
+                    <textarea class="dados mensagem" name="mensagem" id="mensagem" cols="30" rows="10"
+                        placeholder="Mensagem *"></textarea>
+                    <p class="alerta alerta-mensagem">campo obrigatório</p>
                     
-                    <p class="obrigatorio">*Campos obrigatórios</p>
+                    <p class="texto-fixo">*Campos obrigatórios</p>
                     
                     <button type="submit" value="enviar" class="botao">Enviar</button>
                 </form>
