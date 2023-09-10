@@ -10,7 +10,7 @@ main{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(src/images/fundo-formulario.png);
+    background-image: url(../src/images/fundo-formulario.png);
     background-size: contain;
 }
 
