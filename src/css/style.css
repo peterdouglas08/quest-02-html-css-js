@@ -18,13 +18,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 402px;
-}
-
-.container .conteudo {
-    width: 50%;
-    margin-left: 50px;
+    gap: 73px;
 }
 
 .container .conteudo .titulo {
@@ -41,15 +35,13 @@ main{
 }
 
 .container .formulario .cadastro {
-    width: 340px;
-    height: 378px;
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
     padding: 20px;
-    margin-right: 50px;
 }
 
 .container .formulario .cadastro .dados {
-    width: 298px;
     height: 35px;
     border: 1px solid #000;
     border-radius: 5px;
@@ -58,15 +50,13 @@ main{
     padding: 10px;
 }
 
-.container .formulario .cadastro .dados::placeholder,
-.container .formulario .cadastro .mensagem::placeholder {
+.container .formulario .cadastro .dados::placeholder {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 400;
 }
 
 .container .formulario .cadastro .mensagem {
-    width: 298px;
     height: 100px;
     background-color: #fff;
     border: 1px solid #000;
@@ -79,7 +69,6 @@ main{
 }
 
 .container .formulario .cadastro .botao {
-    width: 298px;
     height: 41px;
     background-color: #3CCC87;
     border: none;
@@ -88,13 +77,12 @@ main{
     font-size: 15px;
     font-weight: 700;
     padding: 12px;
-    margin: 15px 0 20px;
+    margin: 15px 0 0;
     cursor: pointer;
 }
 
 .container .formulario .cadastro .alerta {
     display: none;
-    position: absolute;
     color: #F52E2E;
     font-size: 8px;
     transform: translateY(-13px);
@@ -103,7 +91,6 @@ main{
 .container .formulario .cadastro .alerta-mensagem {
     color: #F52E2E;
     font-size: 8px;
-    transform: translateY(-16px);
 }
 
 .container .formulario .cadastro .dados.borda-verde {

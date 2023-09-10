@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+
+  main .container {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    main .container .conteudo .titulo {
+        padding: 10px 20px;
+    }
+
+    main .container .conteudo .texto {
+        padding: 0 30px;
+    }
+
+    .container .cadastro {
+        width: 250px;
+    }
+}
