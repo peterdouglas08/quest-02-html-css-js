@@ -20,7 +20,7 @@ Segundo desafio do curso DevQuest, praticando o que foi aprendido nas aulas de h
 - O fundo do formulário deve ser feito usando a imagem em anexo na aula.
 
 
-### Captura de 
+### Captura-de-tela 
 
 - URL screenshot 1: [Desktop](https://github.com/peterdouglas08/quest-02-html-css-js/issues/1#issue-1889269451)
 - URL screenshot 2: [Mobile](https://github.com/peterdouglas08/quest-02-html-css-js/issues/3#issue-1889269650)
@@ -46,7 +46,7 @@ Em suma, iniciei pela criação da estrutura HTML, sempre procurando utilizar ta
 - Javascript
 
 
-### O que eu aprendi
+### O que aprendi
 
 1. Trabalhar com validação de inputs
 2. A importância da especificidade dos elementos que podem evitar erros no código
