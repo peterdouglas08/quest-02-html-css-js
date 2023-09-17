@@ -5,6 +5,7 @@
         flex-wrap: wrap;
         text-align: center;
         gap: 40px;
+        margin: 0 30px;
     }
 }
 
