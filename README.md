@@ -60,4 +60,4 @@ Embora seja claro e evidente a minha evolução, não me sinto satisfeito com o 
 
 ## Autor
 
-- Website - [Peter Douglas](https://github.com/peterdouglas08)
+Website - [Peter Douglas](https://github.com/peterdouglas08)
