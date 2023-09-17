@@ -10,7 +10,7 @@ main{
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(../src/images/fundo-formulario.png);
+    background-image: url(./src/images/fundo-formulario.png);
     background-size: contain;
 }
 
@@ -62,6 +62,7 @@ main{
     border: 1px solid #000;
     border-radius: 5px;
     padding: 10px;
+    resize: none;
 }
 
 .container .formulario .cadastro .texto-fixo {
@@ -81,26 +82,21 @@ main{
     cursor: pointer;
 }
 
+/* CLASSES PARA MANIPULAÇÃO COM JS */
 .container .formulario .cadastro .alerta {
-    display: none;
     color: #F52E2E;
     font-size: 8px;
-    transform: translateY(-13px);
+    margin: -12px 0 3px;
 }
 
-.container .formulario .cadastro .alerta-mensagem {
-    color: #F52E2E;
-    font-size: 8px;
+.container .formulario .cadastro .alertaOculto{
+    opacity: 0;
 }
 
-.container .formulario .cadastro .dados.borda-verde {
+.container .formulario .cadastro .aceito {
     border: 1px solid #3CCC87;
 }
 
-.container .formulario .cadastro .dados.borda-vermelha {
+.container .formulario .cadastro .recusado {
     border: 1px solid #F52E2E;
-}
-
-.container .formulario .cadastro .ativo{
-    display: block;
 }

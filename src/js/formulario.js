@@ -1,24 +1,19 @@
-const formulario = document.getElementById("form")
-const dadosUsuario = document.querySelectorAll(".dados")
+const dadosForm = document.querySelectorAll(".dados");
+const botaoForm = document.querySelector(".botao");
+const alertaForm = document.querySelectorAll(".alerta")
 
-formulario.addEventListener("submit", function (event) {
-  event.preventDefault()
+botaoForm.addEventListener("click", (event) => {
+  event.preventDefault();
 
-  let camposPreenchidos = 0
-
-  dadosUsuario.forEach(function (item) {
-    if (item.value.trim() === "") {
-      item.classList.add("borda-vermelha")
-      item.nextElementSibling.classList.add("ativo")
+  dadosForm.forEach((input) => {
+    if (input.value) {
+      input.classList.add("aceito");
+      input.classList.remove("recusado");
+      input.nextElementSibling.classList.add("alertaOculto");
     } else {
-      item.classList.remove("borda-vermelha")
-      item.classList.add("borda-verde")
-      item.nextElementSibling.classList.remove("ativo")
-      camposPreenchidos++
+      input.classList.remove("aceito");
+      input.classList.add("recusado");
+      input.nextElementSibling.classList.remove("alertaOculto");
     }
-  })
-
-  if (camposPreenchidos === dadosUsuario.length) {
-    formulario.submit()
-  }
-})
+  });
+});

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quest 02 - HTML, CSS e JS</title>
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/responsive.css">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body>
@@ -22,29 +22,29 @@
                 <form class="cadastro" id="form" action="index.html" method="get" autocomplete="on">
                     <label for="nome"></label>
                     <input class="dados" name="nome" id="nome" type="text" placeholder="Nome completo *">
-                    <p class="alerta">campo obrigatório</p>
+                    <p class="alerta alertaOculto">campo obrigatório</p>
 
                     <label for="email"></label>
                     <input class="dados" name="email" id="email" type="text" placeholder="Email *">
-                    <p class="alerta">campo obrigatório</p>
+                    <p class="alerta alertaOculto">campo obrigatório</p>
 
                     <label for="telefone"></label>
                     <input class="dados" name="telefone" id="telefone" type="text" placeholder="Telefone *">
-                    <p class="alerta">campo obrigatório</p>
+                    <p class="alerta alertaOculto">campo obrigatório</p>
 
                     <textarea class="dados mensagem" name="mensagem" id="mensagem" cols="30" rows="10"
                         placeholder="Mensagem *"></textarea>
-                    <p class="alerta alerta-mensagem">campo obrigatório</p>
+                    <p class="alerta alertaOculto">campo obrigatório</p>
                     
                     <p class="texto-fixo">*Campos obrigatórios</p>
                     
-                    <button type="submit" value="enviar" class="botao">Enviar</button>
+                    <button type="button" value="enviar" class="botao">Enviar</button>
                 </form>
             </section>
         </section>
     </main>
 
-    <script type="text/javascript" src="src/js/formulario.js"></script>
+    <script type="text/javascript" src="./src/js/formulario.js"></script>
 </body>
 
 </html>
